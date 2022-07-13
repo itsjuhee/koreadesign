@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+
+*{
+    box-sizing: border-box; 
+    font-family: 'Roboto','Noto Sans KR', sans-serif;
+}
+
+html, body, h1, h2, h3, p, b {margin: 0;}
+ul, li {list-style-type: none; margin: 0; padding: 0;}
+a {text-decoration: none; cursor: pointer;}
+
+header {
+    width: 100%; padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+        h2 {
+            font-size: 36px;
+        }
+    }
+    .menu {
+        display: flex;
+        nav {
+            font-size: 16px;    // considering
+            margin: 0 20px;
+        }
+    }
+    .icon {
+        a { margin: 0 12px;
+            img {width: 24px; height: 24px;}
+        }
+    }
+}
+.title {
+    p {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+    h3 {
+        font-size: 200px; 
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+.des {
+    p {font-size: 18px;}
+    span {font-size: 12px; color: #595959;}
+}
+
+main {
+    width: 100%;
+    .seoul {
+        width: 100%;
+        .txt {
+            width: 90%; margin: 20% auto 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                position: relative;
+                p {
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: 40px;
+                    text-transform: capitalize;
+                }
+                h3 {
+                    &::after {
+                        content: '';
+                        width: 300px;
+                        border-top: 2px solid #000;
+                        display: inline-block;
+                        position: absolute; left: 110%; top: 56%;
+                    }
+                    font-size: 200px; 
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+            }
+            .des {
+                p {}
+                span {}
+            }
+        }
+        .main {height: 1000px;}
+    }
+
+    .incheon {
+        background-color: #000;
+        color: #fff;
+        .title {
+            text-align: right;
+            padding: 12% 5% 1%;
+            h3 {}
+            p {}
+        }
+        .main {
+            width: 90%; margin: 0 auto;
+            padding-bottom: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                img {width: 100%;}
+                .des {
+                    margin-left: 5%;
+                    p {}
+                    span {color: #999;}
+                }
+            }
+            .right {
+                position: relative;
+                .line {
+                    width: 400px;
+                    border-top: 2px solid #fff;
+                    position: absolute; top: 30%; right: 120%;
+                }
+                .des {
+                    p {}
+                    span {color: #999;}
+                }
+            }
+        }
+    }
+
+    .travel {
+        background-color: #E7DBDB;
+        .title {
+            margin: 0 auto; padding: 10% 0 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {font-size: 120px;}
+            p {font-size: 120px; margin-left: 2%;}
+        }
+        .main {
+            padding-bottom: 10%;
+            .swiper-wrapper {
+                width: 50%; margin: 0 auto;
+            }
+            img {}
+            .des {width: 100%; margin: 2%;}
+        }
+    }
+
+    .luxury {
+        padding: 8% 5%;
+        .title {
+            border-bottom: 2px solid #000;
+            padding-bottom: 2%; margin-bottom: 2%;
+            div {
+                display: flex;
+                align-items: center;
+                h3 {font-size: 120px; text-transform: capitalize;}
+                p {font-size: 110px; margin-left: 2%; text-transform: none;}
+            }
+            span {color: #595959; font-size: 12px;}
+        }
+        .main {
+            .des {
+                margin-top: 2%;
+                display: flex;
+                flex-direction: column;
+                span {margin: 1% 0 0;}
+            }
+            .swiper {
+                width: 100%; height: 900px;
+                .swiper-wrapper {
+                    width: 20%; margin: 0;
+                    .swiper-slide {
+                        width: 20%; 
+                        flex-shrink: 1;
+                        margin-right: 5%;
+                        img {}
+                    }
+                }
+                .swiper-scrollbar {left: 0; bottom: 0;}
+            }
+        }
+    }
+
+    .gangwon {
+        width: 100%;
+        position: relative;
+        img {width: 100%;}
+        h3 {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 200px; font-weight: 300;
+            text-transform: uppercase;
+            border-bottom: 8px solid #fff;
+        }
+    }
+
+    .expedi {
+        width: 90%; margin: 5% auto;
+        position: relative;
+        display: flex;
+        h3::before {
+            content: '';
+            width: 300px;
+            border-bottom: 2px solid #000;
+            display: inline-block;
+            position: absolute; left: -70%; top: 50%;
+        }
+        h3 {
+            position: absolute; top: 10%; right: 20%;
+            font-size: 120px; font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        .left {
+            width: 20%;
+            img {width: 100%;}
+            .des {margin-top: 2%;}
+        }
+        .right {
+            width: 50%; margin: 25% 0 0 5%;
+            display: flex;
+            align-items: flex-end;
+            img {width: 68%;}
+            .des {
+                width: 32%; margin-left: 2%;
+                p {font-size: 16px;}
+            }
+        }
+    }
+
+    .collec {
+        width: 100%; 
+        margin: 0 auto; padding: 8% 5%;
+        background-color: #dbdbdb;
+        .title {
+            margin-bottom: 5%; position: relative;
+            p {
+                font-size: 120px;
+            }
+            h3 {
+                &::before {
+                    content: '';
+                    width: 300px;
+                    border-bottom: 2px solid #000;
+                    display: inline-block;
+                    position: absolute; left: 0%; top: 74%;
+                }
+                font-size: 120px; margin-left: 25%;
+            }
+        }
+        div {
+            ul {
+                width: 100%;
+                display: block;
+                &::after {
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+                li {
+                    float: left; position: relative;
+                    &:nth-of-type(1) {width: 73.5%;}
+                    &:nth-of-type(2) {width: 23%; margin-left: 2%;}
+                    &:nth-of-type(3) {width: 23%; margin: 2% 0 0 2%;}
+                    img {width: 100%;}
+                    div {
+                        position: absolute; left: 5%; bottom: 5%;
+                        p {color: #fff;}
+                    }
+                }
+            }
+        }
+    }
+
+    .maga {
+        width: 90%; margin: 0 auto; padding: 30% 30% 10%;
+        position: relative;
+        .title {
+            position: absolute; top: 10%; left: 20%;
+            z-index: 10;
+            span {
+                font-size: 120px;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+            p {
+                font-size: 120px; margin: -2% 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        .main {
+            img {width: 100%;}
+            span {
+                font-size: 100px;
+                font-family: 'Times New Roman', Times, serif;
+                z-index: 10;
+                position: absolute; top: 0%; right: 0%;
+            }
+            :root {--swiper-theme-color: #797979;}
+        }
+    }
+    .more {
+        width: 90%;
+        margin: 0 auto;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                margin-top: 2%; padding-top: 2%;
+                border-top: 2px solid #000;
+                display: flex;
+                align-items: center;
+                img {width: 50%;}
+                .des {
+                    width: 50%;
+                    margin-left: 2%;
+                    p {}
+                    span {}
+                }
+            }
+        }
+    }
+}
+
+:root {
+    --swiper-theme-color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%; height: 100vh;
+    padding: 5%; margin-top: 10%;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        p {font-size: 32px; text-transform: uppercase; font-size: 24px;}
+        ul {
+            width: 22%;
+            display: flex;
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10%;
+                span {font-size: 12px; margin: 5% 0;}
+            }
+        }
+    }
+    .txt {
+        margin-top: 10%;
+        position: relative;
+        p {
+            &::before {
+                content: '';
+                width: 110%;
+                border-top: 2px solid #fff;
+                display: inline-block;
+                position: absolute; top: 50%; left: -4.5%;
+            }
+            font-size: 240px; font-family: 'Times New Roman', Times, serif;
+            text-align: center; text-transform: capitalize;
+        }
+        span {text-transform: uppercase;}
+    }
+}
