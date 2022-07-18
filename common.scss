@@ -9,6 +9,7 @@
 html, body, h1, h2, h3, p, b {margin: 0;}
 ul, li {list-style-type: none; margin: 0; padding: 0;}
 a {text-decoration: none; cursor: pointer;}
+p {font-family:'Times New Roman', Times, serif; text-transform: capitalize;}
 
 header {
     width: 100%; padding: 2% 5%;
@@ -40,14 +41,14 @@ header {
         text-transform: capitalize;
     }
     h3 {
-        font-size: 200px; 
+        font-size: 180px; 
         font-weight: 300;
         text-transform: uppercase;
     }
 }
 .des {
     p {font-size: 18px;}
-    span {font-size: 12px; color: #595959;}
+    span {font-size: 14px; color: #595959;}
 }
 
 main {
@@ -61,30 +62,27 @@ main {
             align-items: center;
             .title {
                 position: relative;
-                p {
-                    font-family:'Times New Roman', Times, serif;
-                    font-size: 40px;
-                    text-transform: capitalize;
-                }
                 h3 {
                     &::after {
                         content: '';
                         width: 300px;
                         border-top: 2px solid #000;
                         display: inline-block;
-                        position: absolute; left: 110%; top: 56%;
+                        position: absolute; left: 104%; top: 56%;
                     }
-                    font-size: 200px; 
-                    font-weight: 300;
-                    text-transform: uppercase;
+                    margin-top: -5%;
                 }
             }
             .des {
-                p {}
-                span {}
+                width: 24%;
+                p {margin-bottom: 2%;}
             }
         }
-        .main {height: 1000px;}
+        .main {
+            width: 100%;
+            .swiper1 {height: 700px;}
+            img {width: 100%;}
+        }
     }
 
     .incheon {
@@ -94,7 +92,7 @@ main {
             text-align: right;
             padding: 12% 5% 1%;
             h3 {}
-            p {}
+            p {margin: -2% 0 2%;}
         }
         .main {
             width: 90%; margin: 0 auto;
@@ -103,17 +101,24 @@ main {
             justify-content: space-between;
             align-items: center;
             .left {
+                width: 50%;
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
-                img {width: 100%;}
+                img {width: 60%;}
                 .des {
-                    margin-left: 5%;
-                    p {}
+                    width: 36%;
+                    p {
+                        font-weight: 300; font-size: 16px;
+                        font-family: 'Roboto','Noto Sans KR', sans-serif;
+                        text-transform: none;
+                        margin-bottom: 2%;
+                    }
                     span {color: #999;}
                 }
             }
             .right {
+                width: 20%;
                 position: relative;
                 .line {
                     width: 400px;
@@ -121,7 +126,7 @@ main {
                     position: absolute; top: 30%; right: 120%;
                 }
                 .des {
-                    p {}
+                    p {margin-bottom: 2%;}
                     span {color: #999;}
                 }
             }
@@ -140,11 +145,19 @@ main {
         }
         .main {
             padding-bottom: 10%;
-            .swiper-wrapper {
-                width: 50%; margin: 0 auto;
+            .swiper {width: 100%;
+                .swiper-wrapper {
+                    width: 30%;
+                    margin: 0 auto;
+                    .swiper-slide {
+                        img {width: 30%;}
+                        .des {
+                            width: 30%; margin: 1% 0 0;
+                            span {margin-top: 2%;}
+                        }
+                    }
+                }
             }
-            img {}
-            .des {width: 100%; margin: 2%;}
         }
     }
 
@@ -152,21 +165,24 @@ main {
         padding: 8% 5%;
         .title {
             border-bottom: 2px solid #000;
-            padding-bottom: 2%; margin-bottom: 2%;
+            padding-bottom: 1%; margin-bottom: 2%;
             div {
                 display: flex;
                 align-items: center;
                 h3 {font-size: 120px; text-transform: capitalize;}
                 p {font-size: 110px; margin-left: 2%; text-transform: none;}
             }
-            span {color: #595959; font-size: 12px;}
+            span {color: #595959; font-size: 16px;}
         }
         .main {
             .des {
                 margin-top: 2%;
                 display: flex;
                 flex-direction: column;
-                span {margin: 1% 0 0;}
+                span {
+                    margin: 2% 0 0;
+                    &:nth-of-type(1) {font-size: 16px;}
+                    }
             }
             .swiper {
                 width: 100%; height: 900px;
@@ -192,7 +208,7 @@ main {
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
-            font-size: 200px; font-weight: 300;
+            font-size: 180px; font-weight: 300;
             text-transform: uppercase;
             border-bottom: 8px solid #fff;
         }
@@ -218,16 +234,19 @@ main {
         .left {
             width: 20%;
             img {width: 100%;}
-            .des {margin-top: 2%;}
+            .des {
+                margin-top: 2%;
+                p {margin-bottom: 2%;}
+            }
         }
         .right {
-            width: 50%; margin: 25% 0 0 5%;
+            width: 50%; margin: 25% 0 0 10%;
             display: flex;
             align-items: flex-end;
             img {width: 68%;}
             .des {
                 width: 32%; margin-left: 2%;
-                p {font-size: 16px;}
+                p {font-size: 16px; margin-bottom: 2%;}
             }
         }
     }
@@ -237,7 +256,7 @@ main {
         margin: 0 auto; padding: 8% 5%;
         background-color: #dbdbdb;
         .title {
-            margin-bottom: 5%; position: relative;
+            margin-bottom: 4%; position: relative;
             p {
                 font-size: 120px;
             }
@@ -268,8 +287,8 @@ main {
                     &:nth-of-type(3) {width: 23%; margin: 2% 0 0 2%;}
                     img {width: 100%;}
                     div {
-                        position: absolute; left: 5%; bottom: 5%;
-                        p {color: #fff;}
+                        position: absolute; left: 2%; bottom: 4%;
+                        p {color: #fff; font-size: 18px;}
                     }
                 }
             }
@@ -293,6 +312,7 @@ main {
             }
         }
         .main {
+            .swiper-slide:nth-of-type(even) span {color: #fff;}
             img {width: 100%;}
             span {
                 font-size: 100px;
@@ -304,13 +324,14 @@ main {
         }
     }
     .more {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             li {
+                width: 48%;
                 margin-top: 2%; padding-top: 2%;
                 border-top: 2px solid #000;
                 display: flex;
@@ -318,9 +339,8 @@ main {
                 img {width: 50%;}
                 .des {
                     width: 50%;
-                    margin-left: 2%;
-                    p {}
-                    span {}
+                    margin-left: 4%;
+                    p {margin-bottom: 2%;}
                 }
             }
         }
@@ -340,15 +360,19 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        p {font-size: 32px; text-transform: uppercase; font-size: 24px;}
+        p {font-size: 32px; text-transform: uppercase; font-size: 24px;
+            font-family: 'Roboto','Noto Sans KR', sans-serif;
+        }
         ul {
-            width: 22%;
+            width: 40%;
             display: flex;
             li {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 margin-left: 10%;
-                span {font-size: 12px; margin: 5% 0;}
+                span {font-size: 14px; margin: 5% 0;
+                text-transform: lowercase;}
             }
         }
     }
